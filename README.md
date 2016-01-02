@@ -17,3 +17,6 @@ To better understand the descriptions, I suggest the reader to refer to this pap
 * gmm.cc: an implementation of a Gaussian mixture model.
 * mixture.cc: a Gaussian mixture component.
 * sampler.cc: contains code for doing the sampling-based inference steps.
+
+# Test Data
+In the `exps` folder, I've put the data I used to run one of the experiments reported in my TACL paper. You should be able to run it by doing `18.06-1999-L02.dphmm.sh` after you change the path to the compiled binary, whose name will be `adaptor`. I haven't tested it, so let me know if it doesn't work -- just shoot me an email (chiaying@csail.mit.edu). 
