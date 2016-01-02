@@ -1,2 +1,4 @@
-# lexicon_discovery
-Source code for this paper (http://people.csail.mit.edu/chiaying/publications/tacl2015.pdf)
+# Compile 
+A basic makefile is provided as a starting point for compiling the code. You will want to edit the makefile (for example, specify the correct path of the compiler) to compile the code.
+
+
