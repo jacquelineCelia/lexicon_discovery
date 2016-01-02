@@ -1,3 +1,15 @@
+/* -*- C++ -*-
+ *
+ * Copyright (c) 2014
+ * Spoken Language Systems Group
+ * MIT Computer Science and Artificial Intelligence Laboratory
+ * Massachusetts Institute of Technology
+ *
+ * FILE: mixture.h 
+ *                    
+ * Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>
+ * Jan 2016 
+*********************************************************************/
 #ifndef MIXTURE_H
 #define MIXTURE_H
 

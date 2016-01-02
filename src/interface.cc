@@ -5,15 +5,11 @@
  * MIT Computer Science and Artificial Intelligence Laboratory
  * Massachusetts Institute of Technology
  *
- * All Rights Reserved
-
- *	FILE: interface.cc 
- *										                            *
- *   				      				                            * 
- *   Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				*
- *   Feb 2014							                            *
+ * FILE: interface.cc
+ *   				      				                          
+ * Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				
+ * Jan 2016 
 *********************************************************************/
-
 #include <sstream>
 #include <iostream>
 #include <fstream>

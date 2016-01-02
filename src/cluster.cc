@@ -1,3 +1,15 @@
+/* -*- C++ -*-
+ *
+ * Copyright (c) 2016
+ * Spoken Language Systems Group
+ * MIT Computer Science and Artificial Intelligence Laboratory
+ * Massachusetts Institute of Technology
+ *
+ * FILE: cluster.cc
+ *   				      				                            
+ * Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				    
+ * Jan 2016 
+*********************************************************************/
 #include <sstream>
 #include <cstdlib>
 #include <cmath>

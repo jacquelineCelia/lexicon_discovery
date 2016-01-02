@@ -6,9 +6,9 @@
  * Massachusetts Institute of Technology
  *
  * FILE: datum.h 
- *   				      				                            * 
- * Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				    *
- * Feb 2014							                                *
+ *   				      				                             
+ * Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				    
+ * Jan 2016 
 *********************************************************************/
 
 #include "datum.h"
