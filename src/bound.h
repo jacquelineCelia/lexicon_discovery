@@ -1,3 +1,16 @@
+/* -*- C++ -*-
+ *
+ * Copyright (c) 2016
+ * Spoken Language Systems Group
+ * MIT Computer Science and Artificial Intelligence Laboratory
+ * Massachusetts Institute of Technology
+ *
+ * FILE: bound.h
+ *   				      				                            
+ * Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				    
+ * Jan 2016 
+*********************************************************************/
+
 #ifndef BOUND_H
 #define BOUND_H
 

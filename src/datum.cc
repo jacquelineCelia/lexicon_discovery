@@ -1,17 +1,14 @@
 /* -*- C++ -*-
  *
- * Copyright (c) 2014
+ * Copyright (c) 2016
  * Spoken Language Systems Group
  * MIT Computer Science and Artificial Intelligence Laboratory
  * Massachusetts Institute of Technology
  *
- * All Rights Reserved
-
- *	FILE: datum.h 
- *										                            *
+ * FILE: datum.h 
  *   				      				                            * 
- *   Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				*
- *   Feb 2014							                            *
+ * Chia-ying (Jackie) Lee <chiaying@csail.mit.edu>				    *
+ * Feb 2014							                                *
 *********************************************************************/
 
 #include "datum.h"
