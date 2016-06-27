@@ -2,10 +2,10 @@
 
 if [ "$#" -ne 5 ]; then
     echo "./word_discovery.sh _parse_file_ _tag_list_ _iter_num_ _root_dir_" 
-    echo "_parse_file_ the parse file"
-    echo "_tag_list tags of the sentences" 
-    echo "_iter_num_ the iteration number of the parse file"
-    echo "_root_dir_ root dir for the output files"
+    echo "_parse_file_ 18.06-1999-L02.prs.200 (you should get this after you run the code)"
+    echo "_tag_list such as ../exps/18.06-1999/L02/tags" 
+    echo "_iter_num_ 200"
+    echo "_root_dir_ the folder you create for the output files"
     exit;
 fi
 
