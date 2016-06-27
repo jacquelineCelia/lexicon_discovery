@@ -23,6 +23,7 @@ In the `exps` folder, I've put the data I used to run one of the experiments rep
 
 # Updates
 ## Jun-26-2016
+Added data for all the lectures used in the experiments reported in the TACL paper.
 Added the *scripts* folder, where you can find the scripts that map the discovered plus to words.
 
 ## Jan-08-2016
