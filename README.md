@@ -21,5 +21,9 @@ To better understand the descriptions, I suggest the reader to refer to this pap
 # Test Data
 In the `exps` folder, I've put the data I used to run one of the experiments reported in my TACL paper. You should be able to run it by doing `18.06-1999-L02.dphmm.sh` after you change the path to the compiled binary, whose name will be `adaptor`. I haven't tested it, so let me know if it doesn't work -- just shoot me an email (chiaying@csail.mit.edu). 
 
-# Updates (Jan-08-2016)
+# Updates
+## Jun-26-2016
+Added the *scripts* folder, where you can find the scripts that map the discovered plus to words.
+
+## Jan-08-2016
 Matthew Goldstein has pointed out that the path to the MKL libary needs to be changed for some *.d files in order to compile and run the source code.
