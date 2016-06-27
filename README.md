@@ -23,8 +23,8 @@ In the `exps` folder, I've put the data I used to run one of the experiments rep
 
 # Updates
 ## Jun-26-2016
-Added data for all the lectures used in the experiments reported in the TACL paper.
-Added the *scripts* folder, where you can find the scripts that map the discovered plus to words.
+1. Added data for all the lectures used in the experiments reported in the TACL paper.
+2. Added the *scripts* folder, where you can find the scripts that map the discovered plus to words.
 
 ## Jan-08-2016
 Matthew Goldstein has pointed out that the path to the MKL libary needs to be changed for some *.d files in order to compile and run the source code.
