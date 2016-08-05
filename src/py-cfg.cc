@@ -366,12 +366,11 @@ F gibbs_estimate(Interface& interface, pycfg_type& g,
           std::ofstream fgrammar_out(iter_grammar_filename.c_str());
           fgrammar_out << g;
       }  // end of trace
-      /*
+
       if (iteration % speech_eval_every == 0) {  
           interface.save_data(iteration);
           interface.save_model(iteration);
       }
-      */
 
       if (debug >= 500) {
           assert(g.sum_pym() == g.terms_pytrees_size());
@@ -405,6 +404,8 @@ F gibbs_estimate(Interface& interface, pycfg_type& g,
           F btm_pi0 = g.DecreasePLUT2B(tp0_plu_top, current_plu_btms[i]);
           pi0 *= btm_pi0;
 
+          F btm_r0 = g.PLUT2BProb(tp0_plu_top, current_plu_btms[i]);
+
           if (pi0 <= 0) {
               std::cerr << "## " << HERE 
                 << " Underflow in gibbs_estimate() while computing pi0 = decrtree(tp0):"
@@ -435,12 +436,9 @@ F gibbs_estimate(Interface& interface, pycfg_type& g,
               std::cerr << "re-sampling termianls " << std::endl;
           }
 
-          /*
           Sss tp0_plu_btm = interface.resegment(i, \
             current_rule_weights, current_rule_counts, current_parent_counts, \
             tp0_plu_top, (float) log(btm_pi0), (float) log(btm_r0)); 
-            */
-          Sss tp0_plu_btm = current_plu_btms[i];
 
           if (debug == -1) {
               std::cerr << "set the new plu_btms" << std::endl; 
@@ -629,11 +627,9 @@ F gibbs_estimate(Interface& interface, pycfg_type& g,
           std::cerr << "it took " << sample_end - sample_start << " secs to process sample " << i << std::endl;
       }
 
-      /*
       std::cerr << "Resampling cluster parameters..." << std::endl;
       interface.resample_cluster_parameters();
       std::cerr << "Done reampling cluster parameters..." << std::endl;
-      */
 
       // need to check
       // done checking
@@ -662,8 +658,8 @@ F gibbs_estimate(Interface& interface, pycfg_type& g,
               }
               (*finalparses_stream_ptr) << std::endl;
           }
-          // interface.save_data(iteration);
-          // interface.save_model(iteration);
+          interface.save_data(iteration);
+          interface.save_model(iteration);
       }
       iter_end = time(0);
       std::cerr << "It took " << iter_end - iter_start << " seconds to run 1 iteration..." << std::endl;
@@ -767,7 +763,7 @@ int main(int argc, char** argv) {
   bool train_frac_randomise = false;
 
   int chr;
-  while ((chr = getopt(argc, argv, "A:CDEF:G:H:I:N:PR:ST:X:Y:Z:a:b:d:e:f:g:h:m:n:r:s:t:w:x:z:k:l:j:i:o:u:v:")) 
+  while ((chr = getopt(argc, argv, "A:CDEF:G:H:I:N:PR:ST:X:Y:Z:a:b:d:e:f:g:h:m:n:r:s:t:w:x:z:k:l:j:i:o:u:v:y:")) 
 	 != -1)
     switch (chr) {
     case 'A':
